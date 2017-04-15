@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hLg-TX-NbT">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="First" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="_D_Quick_Qctions_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGQ-Rj-vi5">
+                                <rect key="frame" x="172" y="417" width="71" height="30"/>
+                                <state key="normal" title="Next Page"/>
+                                <connections>
+                                    <segue destination="SAm-yi-PWa" kind="show" id="8cf-1G-WHf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVM-Jh-hrQ">
+                                <rect key="frame" x="177" y="358" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RGQ-Rj-vi5" firstAttribute="top" secondItem="HVM-Jh-hrQ" secondAttribute="bottom" constant="38" id="HJU-8a-6Xe"/>
+                            <constraint firstItem="HVM-Jh-hrQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Q89-ZL-dR3"/>
+                            <constraint firstItem="HVM-Jh-hrQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fbG-ge-uqh"/>
+                            <constraint firstItem="RGQ-Rj-vi5" firstAttribute="centerX" secondItem="HVM-Jh-hrQ" secondAttribute="centerX" id="x6E-DH-xW1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aH8-0o-i6M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044.9275362318842" y="138.58695652173915"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="BSb-Pa-hk3">
+            <objects>
+                <viewController storyboardIdentifier="Second" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SAm-yi-PWa" customClass="SecondVC" customModule="_D_Quick_Qctions_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BIi-wZ-OwU"/>
+                        <viewControllerLayoutGuide type="bottom" id="oTq-UC-6cz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O3Y-VI-H7x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grr-6g-xog">
+                                <rect key="frame" x="165" y="358" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qb8-lC-YTR">
+                                <rect key="frame" x="172" y="417" width="71" height="30"/>
+                                <state key="normal" title="Next Page"/>
+                                <connections>
+                                    <segue destination="DJc-tR-H7X" kind="show" id="Ivc-Hg-5dU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qb8-lC-YTR" firstAttribute="top" secondItem="Grr-6g-xog" secondAttribute="bottom" constant="38" id="8IJ-ta-knj"/>
+                            <constraint firstItem="Grr-6g-xog" firstAttribute="centerX" secondItem="O3Y-VI-H7x" secondAttribute="centerX" id="ghl-lm-Hrc"/>
+                            <constraint firstItem="Grr-6g-xog" firstAttribute="centerY" secondItem="O3Y-VI-H7x" secondAttribute="centerY" id="hkX-CW-JxU"/>
+                            <constraint firstItem="qb8-lC-YTR" firstAttribute="centerX" secondItem="Grr-6g-xog" secondAttribute="centerX" id="n94-UV-EGk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kCl-YF-fje" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1757.9710144927537" y="138.58695652173915"/>
+        </scene>
+        <!--ThirdVC-->
+        <scene sceneID="Wp5-8S-4Og">
+            <objects>
+                <viewController storyboardIdentifier="Third" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DJc-tR-H7X" customClass="ThirdVC" customModule="_D_Quick_Qctions_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IoW-cy-Yu4"/>
+                        <viewControllerLayoutGuide type="bottom" id="qQu-CX-nS4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Zn-iI-MWh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HF3-au-1bj">
+                                <rect key="frame" x="174" y="358" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Id-ae-2aP">
+                                <rect key="frame" x="187" y="417" width="41" height="30"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <action selector="btnToFirstVC:" destination="DJc-tR-H7X" eventType="touchUpInside" id="ByD-z8-77J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HF3-au-1bj" firstAttribute="centerX" secondItem="5Id-ae-2aP" secondAttribute="centerX" id="AdG-ts-Smd"/>
+                            <constraint firstItem="HF3-au-1bj" firstAttribute="centerX" secondItem="5Zn-iI-MWh" secondAttribute="centerX" id="Ja9-T7-uH1"/>
+                            <constraint firstItem="HF3-au-1bj" firstAttribute="centerY" secondItem="5Zn-iI-MWh" secondAttribute="centerY" id="T9H-tf-Q2w"/>
+                            <constraint firstItem="5Id-ae-2aP" firstAttribute="top" secondItem="HF3-au-1bj" secondAttribute="bottom" constant="38" id="qV4-zE-21b"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zxY-8n-gtA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2468" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="H0o-rz-bBN">
+            <objects>
+                <navigationController storyboardIdentifier="Main" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hLg-TX-NbT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZJV-hv-gQc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NNJ-ea-V3Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rkd-Pi-PZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="343" y="139"/>
+        </scene>
+    </scenes>
+</document>
